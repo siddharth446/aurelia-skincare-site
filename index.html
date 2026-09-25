@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelia — a concept D2C skincare house. Editorial design study with CSS-drawn bottles, sample routines, and honest concept copy.">
+  <meta name="theme-color" content="#f4ecdf">
+  <title>Aurelia — Skin, in its own time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="bar">
+    <div class="bar__inner">
+      <nav class="bar__side" aria-label="Shop sections">
+        <a href="#collection">Shop</a>
+        <a href="#rituals">Rituals</a>
+      </nav>
+      <a href="#" class="wordmark" aria-label="Aurelia home">AURELIA</a>
+      <div class="bar__side bar__side--right">
+        <a href="#story">Story</a>
+        <a href="#faq" class="bar__cart" aria-label="Concept note: cart is not functional">Bag (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__over reveal-line">A concept house of skincare — est. nowhere, yet</p>
+        <h1 class="hero__title" aria-label="Skin, in its own time.">
+          <span class="word">Skin,</span>
+          <span class="word word--italic">in&nbsp;its</span>
+          <span class="word">own&nbsp;time.</span>
+        </h1>
+        <p class="hero__sub">Slow actives, soft rituals, and a shelf that looks like the bathroom it lives in. This is an editorial design study — the products, prices and “stock” below are invented.</p>
+      </div>
+
+      <!-- CSS-drawn hero bottle trio -->
+      <div class="hero__stage" aria-hidden="true">
+        <div class="pedestal pedestal--l">
+          <div class="bottle bottle--amber bottle--tall"><span class="bottle__cap"></span><span class="bottle__label"><em>No. 03</em></span></div>
+        </div>
+        <div class="pedestal pedestal--c">
+          <div class="jar"><span class="jar__lid"></span><span class="jar__label">Crème&nbsp;Veil</span></div>
+        </div>
+        <div class="pedestal pedestal--r">
+          <div class="bottle bottle--cream bottle--pipette"><span class="bottle__dropper"></span><span class="bottle__label"><em>No. 01</em></span></div>
+        </div>
+        <span class="hero__sun" aria-hidden="true"></span>
+      </div>
+
+      <a class="hero__scroll" href="#collection">Scroll <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- ======== INGREDIENT MARQUEE ======== -->
+    <section class="marquee-band" aria-label="Featured ingredient names">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <span>Niacinamide 5%</span><span class="sep">✳</span>
+          <span>Squalane</span><span class="sep">✳</span>
+          <span>Bakuchiol</span><span class="sep">✳</span>
+          <span>Azelaic Acid 10%</span><span class="sep">✳</span>
+          <span>Ceramide NP</span><span class="sep">✳</span>
+          <span>Panthenol</span><span class="sep">✳</span>
+          <span>Centella Asiatica</span><span class="sep">✳</span>
+          <span>Glycerin, honestly</span><span class="sep">✳</span>
+        </div>
+      </div>
+      <p class="sr-only">Ingredient list: niacinamide, squalane, bakuchiol, azelaic acid, ceramide NP, panthenol, centella asiatica, glycerin.</p>
+    </section>
+
+    <!-- ======== COLLECTION ======== -->
+    <section class="collection" id="collection">
+      <div class="collection__head reveal">
+        <p class="overline">The imaginary shelf</p>
+        <h2>Six products,<br>drawn in CSS.</h2>
+        <p class="collection__note">Every bottle on this page is HTML and CSS — no photography was used in this concept. Prices are sample figures.</p>
+      </div>
+
+      <ul class="grid" role="list">
+        <li class="card reveal" role="listitem">
+          <div class="card__art card__art--1">
+            <div class="bottle bottle--pipette bottle--glass"><span class="bottle__dropper"></span><span class="bottle__label"><em>No. 01</em></span></div>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Morning serum</p>
+            <h3>First Light</h3>
+            <p class="card__desc">Niacinamide + squalane, weightless. The one you'll stop noticing because your skin stopped arguing.</p>
+            <p class="card__foot"><span class="card__price">$38</span><button class="card__btn" type="button" data-name="First Light">Add — sample</button></p>
+          </div>
+        </li>
+        <li class="card reveal" role="listitem">
+          <div class="card__art card__art--2">
+            <div class="tube"><span class="tube__crimp"></span><span class="tube__cap"></span><span class="tube__label">Melt&nbsp;Cleanser</span></div>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Cleanser</p>
+            <h3>Melt</h3>
+            <p class="card__desc">Oil-to-milk cleanse for the end of loud days. Fragrance-free, opinion-free.</p>
+            <p class="card__foot"><span class="card__price">$24</span><button class="card__btn" type="button" data-name="Melt">Add — sample</button></p>
+          </div>
+        </li>
+        <li class="card reveal" role="listitem">
+          <div class="card__art card__art--3">
+            <div class="jar jar--wide"><span class="jar__lid"></span><span class="jar__label">Crème&nbsp;Veil</span></div>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Moisturiser</p>
+            <h3>Crème Veil</h3>
+            <p class="card__desc">Ceramide barrier cream with the finish of a good paperback cover. Sits under everything.</p>
+            <p class="card__foot"><span class="card__price">$42</span><button class="card__btn" type="button" data-name="Crème Veil">Add — sample</button></p>
+          </div>
+        </li>
+        <li class="card reveal" role="listitem">
+          <div class="card__art card__art--4">
+            <div class="bottle bottle--amber bottle--tall"><span class="bottle__cap"></span><span class="bottle__label"><em>No. 03</em></span></div>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Night active</p>
+            <h3>Night Shift</h3>
+            <p class="card__desc">Bakuchiol, the retinol-alike that kept the good habits and dropped the tantrums.</p>
+            <p class="card__foot"><span class="card__price">$46</span><button class="card__btn" type="button" data-name="Night Shift">Add — sample</button></p>
+          </div>
+        </li>
+        <li class="card reveal" role="listitem">
+          <div class="card__art card__art--5">
+            <div class="dropper-mini"><span class="dropper-mini__bulb"></span><span class="dropper-mini__body">Azelaic&nbsp;10</span></div>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Spot treatment</p>
+            <h3>Quiet Azelaic</h3>
+            <p class="card__desc">10% azelaic suspension for redness that shows up uninvited and should leave early.</p>
+            <p class="card__foot"><span class="card__price">$29</span><button class="card__btn" type="button" data-name="Quiet Azelaic">Add — sample</button></p>
+          </div>
+        </li>
+        <li class="card reveal" role="listitem">
+          <div class="card__art card__art--6">
+            <div class="mist"><span class="mist__nozzle"></span><span class="mist__label">Rosewater&nbsp;Mist</span></div>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Facial mist</p>
+            <h3>Interlude</h3>
+            <p class="card__desc">A mist that's mostly centella and mostly water, which is exactly what that means.</p>
+            <p class="card__foot"><span class="card__price">$18</span><button class="card__btn" type="button" data-name="Interlude">Add — sample</button></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ======== RITUALS / HOW IT WORKS ======== -->
+    <section class="rituals" id="rituals">
+      <div class="rituals__inner">
+        <div class="rituals__copy reveal">
+          <p class="overline">Sample rituals</p>
+          <h2>Three steps, twice, and then stop thinking about it.</h2>
+          <p>Skin routines fail when they're quizzes. The concept ships two — one for waking up, one for winding down — and nothing else unless you go looking.</p>
+        </div>
+        <div class="rituals__cols">
+          <article class="ritual reveal">
+            <header><span class="ritual__sun" aria-hidden="true"></span><h3>A.M. — First Light ritual</h3></header>
+            <ol>
+              <li><strong>Melt</strong> — thirty seconds on dry skin, water after. Nothing squeaks.</li>
+              <li><strong>First Light</strong> — four drops, pressed in not rubbed.</li>
+              <li><strong>Crème Veil</strong> — a pea, and SPF over it, always, this is the whole sermon.</li>
+            </ol>
+            <p class="ritual__time">≈ 2 min</p>
+          </article>
+          <article class="ritual reveal">
+            <header><span class="ritual__moon" aria-hidden="true"></span><h3>P.M. — Night Shift ritual</h3></header>
+            <ol>
+              <li><strong>Melt</strong> — a second pass if the day wore makeup.</li>
+              <li><strong>Night Shift</strong> — two drops, twice a week at first. Skin keeps a calendar too.</li>
+              <li><strong>Crème Veil</strong> — a little more than morning. You're not going anywhere.</li>
+            </ol>
+            <p class="ritual__time">≈ 3 min</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== STORY ======== -->
+    <section class="story" id="story">
+      <div class="story__inner">
+        <blockquote class="reveal">
+          <p>“We named the company after a grandmother's garden, not a laboratory. The bottles are the ones you'd leave on the counter.”</p>
+          <footer>— invented founder line, written for this concept</footer>
+        </blockquote>
+        <div class="story__facts">
+          <div class="fact reveal"><span class="fact__n">6</span><p>products in the concept range — deliberately short</p></div>
+          <div class="fact reveal"><span class="fact__n">0</span><p>photographs used; every visual is drawn with CSS</p></div>
+          <div class="fact reveal"><span class="fact__n">2</span><p>rituals, morning and night, no quizzes required</p></div>
+          <div class="fact reveal"><span class="fact__n">100%</span><p>of claims on this page are labeled as concept copy</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FAQ ======== -->
+    <section class="faq" id="faq">
+      <div class="faq__inner">
+        <div class="faq__head reveal">
+          <p class="overline">Before you ask</p>
+          <h2>Questions, answered without marketing gloss</h2>
+        </div>
+        <div class="faq__list reveal">
+          <details>
+            <summary>Can I actually order Aurelia?</summary>
+            <div class="faq__a"><p>No — Aurelia is a studio concept build. The products, prices, and founder quote are invented to demonstrate e-commerce design craft. The “Add — sample” buttons count items for the demo but nothing ships.</p></div>
+          </details>
+          <details>
+            <summary>Are the bottle illustrations real product renders?</summary>
+            <div class="faq__a"><p>They're real CSS. Each bottle, jar, tube and mist is built from divs, gradients and border-radius — zoom in and the edges are still vector-sharp because they are literally geometry, not pixels.</p></div>
+          </details>
+          <details>
+            <summary>Why so few products?</summary>
+            <div class="faq__a"><p>Because a concept gets to ignore assortment pressure. Six SKUs is the argument: a shelf you can read in ten seconds beats a catalog of duplicates at different prices.</p></div>
+          </details>
+          <details>
+            <summary>Do the ingredient percentages mean anything?</summary>
+            <div class="faq__a"><p>They're plausible figures chosen for the copy design — niacinamide and azelaic at commonly used cosmetic ranges. No formula exists to test, so treat them as typography with numbers in it.</p></div>
+          </details>
+          <details>
+            <summary>What's the shipping and returns policy?</summary>
+            <div class="faq__a"><p>For a concept: imaginary. The design decision it lets us show is the boring trust furniture — free-threshold bar, 30-day language, and a bag that behaves — done tastefully instead of shoutily.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CLOSING ======== -->
+    <section class="finale">
+      <div class="finale__inner reveal">
+        <h2>Aurelia, in one line:<br><em>a shelf you'd keep the door open for.</em></h2>
+        <p class="finale__cta"><a href="#collection">Back to the imaginary shelf</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <p class="wordmark wordmark--small">AURELIA</p>
+        <p>A concept skincare house. Invented products, invented prices, honest labels saying so.</p>
+      </div>
+      <nav aria-label="Explore"><h4>Explore</h4><a href="#collection">Collection</a><a href="#rituals">Rituals</a><a href="#story">Story</a><a href="#faq">FAQ</a></nav>
+      <nav aria-label="The fine print"><h4>Fine print</h4><a href="#faq">Not a real store</a><a href="#faq">Sample data policy</a></nav>
+      <nav aria-label="Studio"><h4>Built by</h4><a href="https://nexapulsestudio.netlify.app" rel="noopener">NexaPulse Studio</a><a href="https://github.com/siddharth446/aurelia-skincare-site" rel="noopener">Source on GitHub</a></nav>
+    </div>
+    <div class="foot__bottom">
+      <p>A studio concept build by <a href="https://nexapulsestudio.netlify.app" rel="noopener">NexaPulse Studio</a> — not a live client project. <a href="https://github.com/siddharth446/aurelia-skincare-site" rel="noopener">View source on GitHub.</a></p>
+    </div>
+  </footer>
+
+  <div class="bag-toast" id="bagToast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
